@@ -1,0 +1,93 @@
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form *ngIf="!isLoggedIn"
+          name="form"
+          #f="ngForm"
+          novalidate>
+            <div class="divider d-flex align-items-center my-4">
+              <p class="text-center fw-bold mx-3 mb-0"> <img src="data:image/jpeg;base64,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"
+                style="width :250px" alt="Sample image"></p>
+
+            </div>
+            <!-- User id -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3">User Id</label>
+              <input type="userid" id="inputuserid" class="form-control form-control-lg"
+                placeholder="Enter a valid User ID" name="username"
+                [(ngModel)]="form.username"
+                required
+                #username="ngModel"/>
+                <div
+                  class="alert alert-danger"
+                  role="alert"
+                  *ngIf="username.errors && f.submitted"
+                >
+                Username is required!
+                </div>
+
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <label class="form-label" for="form3Example4">Password</label>
+              <input type="password" id="inputpassword" class="form-control form-control-lg"
+                placeholder="Enter password" name="password"
+                [(ngModel)]="form.password"
+                required
+                minlength="6"
+                #password="ngModel"/>
+                <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="password.errors && f.submitted"
+        >
+        <div *ngIf="password.errors['required']">Password is required</div>
+        <div *ngIf="password.errors['minlength']">
+          Password must be at least 6 characters
+        </div>
+        </div>
+
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Remember me
+                </label>
+              </div>
+              <a href="#!" class="text-body">Forgot password?</a>
+            </div>
+
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;" (click)="onSubmit()" roterLink="dashboard">Login</button>
+              <!-- <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/register"
+                  class="link-danger">Register</a></p> -->
+
+            </div>
+            <div class="form-group">
+              <div
+                class="alert alert-danger"
+                role="alert"
+                *ngIf="f.submitted && isLoginFailed"
+              >
+                Login failed: {{ errorMessage }}
+              </div>
+            </div>
+
+          </form>
+          <div class="alert alert-success" *ngIf="isLoggedIn">
+            Logged in susscess.{{roles}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

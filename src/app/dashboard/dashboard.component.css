@@ -1,0 +1,12 @@
+.navbar{
+  width: 90%;
+  background-color: rgb(74, 74, 209) !important;
+}
+.upload{
+  max-width: 200px;
+  height: 20px;
+  float: right;
+  position: relative;
+  bottom: 54px;
+  right: 25px;
+}
